@@ -1,177 +1,726 @@
 [
-	{
-		"id": 1,
-		"name": "Classic Spaghetti Carbonara",
-		"ingredients": [
-			"spaghetti",
-			"eggs",
-			"parmesan cheese",
-			"bacon",
-			"black pepper",
-			"salt"
-		],
-		"description": "A traditional Italian pasta dish with a creamy egg-based sauce",
-		"cookingTime": 20,
-		"difficulty": "medium",
-		"cuisine": "Italian"
-	},
-	{
-		"id": 2,
-		"name": "Chicken Stir Fry",
-		"ingredients": [
-			"chicken breast",
-			"soy sauce",
-			"bell peppers",
-			"onion",
-			"garlic",
-			"ginger",
-			"rice",
-			"vegetable oil"
-		],
-		"description": "Quick and healthy Asian-inspired stir fry",
-		"cookingTime": 15,
-		"difficulty": "easy",
-		"cuisine": "Asian"
-	},
-	{
-		"id": 3,
-		"name": "Greek Salad",
-		"ingredients": [
-			"tomatoes",
-			"cucumber",
-			"red onion",
-			"feta cheese",
-			"olives",
-			"olive oil",
-			"lemon juice",
-			"oregano"
-		],
-		"description": "Fresh Mediterranean salad with tangy feta",
-		"cookingTime": 10,
-		"difficulty": "easy",
-		"cuisine": "Greek"
-	},
-	{
-		"id": 4,
-		"name": "Beef Tacos",
-		"ingredients": [
-			"ground beef",
-			"taco shells",
-			"lettuce",
-			"tomatoes",
-			"cheese",
-			"sour cream",
-			"onion",
-			"cilantro"
-		],
-		"description": "Classic Mexican tacos with seasoned beef",
-		"cookingTime": 25,
-		"difficulty": "easy",
-		"cuisine": "Mexican"
-	},
-	{
-		"id": 5,
-		"name": "Vegetable Curry",
-		"ingredients": [
-			"potatoes",
-			"carrots",
-			"peas",
-			"coconut milk",
-			"curry powder",
-			"onion",
-			"garlic",
-			"ginger",
-			"rice"
-		],
-		"description": "Creamy and aromatic vegetarian curry",
-		"cookingTime": 35,
-		"difficulty": "medium",
-		"cuisine": "Indian"
-	},
-	{
-		"id": 6,
-		"name": "Caesar Salad",
-		"ingredients": [
-			"romaine lettuce",
-			"parmesan cheese",
-			"croutons",
-			"chicken breast",
-			"caesar dressing",
-			"lemon juice",
-			"garlic"
-		],
-		"description": "Classic Caesar salad with grilled chicken",
-		"cookingTime": 15,
-		"difficulty": "easy",
-		"cuisine": "American"
-	},
-	{
-		"id": 7,
-		"name": "Margherita Pizza",
-		"ingredients": [
-			"pizza dough",
-			"tomato sauce",
-			"mozzarella cheese",
-			"basil",
-			"olive oil",
-			"garlic"
-		],
-		"description": "Simple and delicious Italian pizza",
-		"cookingTime": 30,
-		"difficulty": "medium",
-		"cuisine": "Italian"
-	},
-	{
-		"id": 8,
-		"name": "Chicken Soup",
-		"ingredients": [
-			"chicken breast",
-			"carrots",
-			"celery",
-			"onion",
-			"garlic",
-			"chicken broth",
-			"noodles",
-			"parsley"
-		],
-		"description": "Comforting homemade chicken noodle soup",
-		"cookingTime": 45,
-		"difficulty": "easy",
-		"cuisine": "American"
-	},
-	{
-		"id": 9,
-		"name": "Fried Rice",
-		"ingredients": [
-			"rice",
-			"eggs",
-			"peas",
-			"carrots",
-			"soy sauce",
-			"green onions",
-			"garlic",
-			"vegetable oil"
-		],
-		"description": "Quick fried rice with vegetables",
-		"cookingTime": 20,
-		"difficulty": "easy",
-		"cuisine": "Asian"
-	},
-	{
-		"id": 10,
-		"name": "Caprese Salad",
-		"ingredients": [
-			"tomatoes",
-			"mozzarella cheese",
-			"basil",
-			"olive oil",
-			"balsamic vinegar",
-			"salt",
-			"black pepper"
-		],
-		"description": "Fresh Italian salad with tomatoes and mozzarella",
-		"cookingTime": 10,
-		"difficulty": "easy",
-		"cuisine": "Italian"
-	}
+  {
+    "id": 1,
+    "name": "Classic Spaghetti Carbonara",
+    "ingredients": [
+      "spaghetti",
+      "eggs",
+      "parmesan cheese",
+      "bacon",
+      "black pepper",
+      "salt"
+    ],
+    "description": "A traditional Italian pasta dish with a creamy egg-based sauce",
+    "cookingTime": 20,
+    "difficulty": "medium",
+    "cuisine": "Italian"
+  },
+  {
+    "id": 2,
+    "name": "Chicken Stir Fry",
+    "ingredients": [
+      "chicken breast",
+      "soy sauce",
+      "bell peppers",
+      "onion",
+      "garlic",
+      "ginger",
+      "rice",
+      "vegetable oil"
+    ],
+    "description": "Quick and healthy Asian-inspired stir fry",
+    "cookingTime": 15,
+    "difficulty": "easy",
+    "cuisine": "Asian"
+  },
+  {
+    "id": 3,
+    "name": "Greek Salad",
+    "ingredients": [
+      "tomatoes",
+      "cucumber",
+      "red onion",
+      "feta cheese",
+      "olives",
+      "olive oil",
+      "lemon juice",
+      "oregano"
+    ],
+    "description": "Fresh Mediterranean salad with tangy feta",
+    "cookingTime": 10,
+    "difficulty": "easy",
+    "cuisine": "Greek"
+  },
+  {
+    "id": 4,
+    "name": "Beef Tacos",
+    "ingredients": [
+      "ground beef",
+      "taco shells",
+      "lettuce",
+      "tomatoes",
+      "cheese",
+      "sour cream",
+      "onion",
+      "cilantro"
+    ],
+    "description": "Classic Mexican tacos with seasoned beef",
+    "cookingTime": 25,
+    "difficulty": "easy",
+    "cuisine": "Mexican"
+  },
+  {
+    "id": 5,
+    "name": "Vegetable Curry",
+    "ingredients": [
+      "potatoes",
+      "carrots",
+      "peas",
+      "coconut milk",
+      "curry powder",
+      "onion",
+      "garlic",
+      "ginger",
+      "rice"
+    ],
+    "description": "Creamy and aromatic vegetarian curry",
+    "cookingTime": 35,
+    "difficulty": "medium",
+    "cuisine": "Indian"
+  },
+  {
+    "id": 6,
+    "name": "Caesar Salad",
+    "ingredients": [
+      "romaine lettuce",
+      "parmesan cheese",
+      "croutons",
+      "chicken breast",
+      "caesar dressing",
+      "lemon juice",
+      "garlic"
+    ],
+    "description": "Classic Caesar salad with grilled chicken",
+    "cookingTime": 15,
+    "difficulty": "easy",
+    "cuisine": "American"
+  },
+  {
+    "id": 7,
+    "name": "Margherita Pizza",
+    "ingredients": [
+      "pizza dough",
+      "tomato sauce",
+      "mozzarella cheese",
+      "basil",
+      "olive oil",
+      "garlic"
+    ],
+    "description": "Simple and delicious Italian pizza",
+    "cookingTime": 30,
+    "difficulty": "medium",
+    "cuisine": "Italian"
+  },
+  {
+    "id": 8,
+    "name": "Chicken Soup",
+    "ingredients": [
+      "chicken breast",
+      "carrots",
+      "celery",
+      "onion",
+      "garlic",
+      "chicken broth",
+      "noodles",
+      "parsley"
+    ],
+    "description": "Comforting homemade chicken noodle soup",
+    "cookingTime": 45,
+    "difficulty": "easy",
+    "cuisine": "American"
+  },
+  {
+    "id": 9,
+    "name": "Fried Rice",
+    "ingredients": [
+      "rice",
+      "eggs",
+      "peas",
+      "carrots",
+      "soy sauce",
+      "green onions",
+      "garlic",
+      "vegetable oil"
+    ],
+    "description": "Quick fried rice with vegetables",
+    "cookingTime": 20,
+    "difficulty": "easy",
+    "cuisine": "Asian"
+  },
+  {
+    "id": 10,
+    "name": "Caprese Salad",
+    "ingredients": [
+      "tomatoes",
+      "mozzarella cheese",
+      "basil",
+      "olive oil",
+      "balsamic vinegar",
+      "salt",
+      "black pepper"
+    ],
+    "description": "Fresh Italian salad with tomatoes and mozzarella",
+    "cookingTime": 10,
+    "difficulty": "easy",
+    "cuisine": "Italian"
+  },
+  {
+    "id": 11,
+    "name": "Peanut Brittle(Microwave)",
+    "ingredients": [
+      "c. sugar",
+      "/2 c. Karo syrup (white)",
+      "c. peanuts",
+      "Tbsp. butter",
+      "tsp. vanilla",
+      "tsp. baking soda",
+      "pinch of salt"
+    ],
+    "description": "Mix sugar, syrup, peanuts and salt on plate (8 x 8 x 2-inch). Cook on High for 4 minutes; stir....",
+    "cookingTime": 30,
+    "difficulty": "medium",
+    "cuisine": "American",
+    "directions": [
+      "Mix sugar, syrup, peanuts and salt on plate (8 x 8 x 2-inch). Cook on High for 4 minutes; stir.",
+      "Cook for 3 1/2 minutes on High. Add butter and vanilla; stir.",
+      "Cook 2 more minutes on High.",
+      "Add baking soda; stir well.",
+      "Pour onto cookie sheet to cool 1 hour. Break apart when set."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 12,
+    "name": "Fresh Citrus Punch",
+    "ingredients": [
+      "c. fresh orange juice, chilled",
+      "c. fresh grapefruit juice, chilled",
+      "c. fresh lemon juice, chilled",
+      "/4 c. sugar",
+      "c. ginger ale",
+      "fresh strawberries",
+      "canned pineapple chunks"
+    ],
+    "description": "Combine 6 cups fruit juice and sugar, stirring until sugar is dissolved....",
+    "cookingTime": 30,
+    "difficulty": "medium",
+    "cuisine": "Asian",
+    "directions": [
+      "Combine 6 cups fruit juice and sugar, stirring until sugar is dissolved.",
+      "Add ginger ale.",
+      "Serve over ice, if desired.",
+      "Garnish punch with fresh strawberries and pineapple chunks."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 13,
+    "name": "Sweet and Sour Party Meatballs",
+    "ingredients": [
+      "l lb. ground beef",
+      "lb (.5 kg). ground pork",
+      "cups (475 ml) soft bread crumbs",
+      "tbsp (30 ml). finely chopped onion",
+      "eggs, beaten",
+      "tsp (5 ml). salt",
+      "/4 tsp (1 ml). pepper",
+      "tbsp (15 ml). margarine",
+      "tbsp (45 ml). cornstarch",
+      "cup (225 ml) vinegar",
+      "/4 cup (175 ml) sugar",
+      "drops hot sauce",
+      "tbsp (15 ml). Worcestershire sauce",
+      "green pepper, diced",
+      "20 oz (560 grm). can pineapple chunks, drained",
+      "8 oz (224 grm). can tomato sauce"
+    ],
+    "description": "Combine first 7 ingredients, mixing well; shape into 1-inch meatballs....",
+    "cookingTime": 30,
+    "difficulty": "hard",
+    "cuisine": "American",
+    "directions": [
+      "Combine first 7 ingredients, mixing well; shape into 1-inch meatballs.",
+      "Brown in butter over medium heat; drain.",
+      "Place meatballs in a 13 x 9 x 2 inch baking dish.",
+      "Combine cornstarch, vinegar and sugar in a medium saucepan; cook over low heat, stirring constantly, until clear and thickened.",
+      "Stir in remaining ingredients; pour over meatballs.",
+      "Bake at 300 degrees (150 C.) for 40 minutes."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 14,
+    "name": "Cream Cheese Corn",
+    "ingredients": [
+      "stick oleo or butter",
+      "oz. cream cheese",
+      "can green chilies",
+      "cans whole kernel corn"
+    ],
+    "description": "Melt oleo and cream cheese....",
+    "cookingTime": 30,
+    "difficulty": "easy",
+    "cuisine": "American",
+    "directions": [
+      "Melt oleo and cream cheese.",
+      "Add green chilies and juice. Drain 2 of the cans of corn; add the other entire can.",
+      "Heat until all is mixed and hot.",
+      "Will keep up to 3 weeks in refrigerator. (Children love this creamy corn.)"
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 15,
+    "name": "Pecan Dreams",
+    "ingredients": [
+      "/4 lb. butter, softened",
+      "/4 c. confectioners sugar",
+      "c. all-purpose flour, sifted",
+      "/4 c. finely chopped pecans",
+      "tsp. vanilla",
+      "/8 tsp. salt",
+      "pinch of ground nutmeg"
+    ],
+    "description": "In mixing bowl, cream butter and sugar until light and fluffy. Stir in remaining ingredients....",
+    "cookingTime": 30,
+    "difficulty": "medium",
+    "cuisine": "American",
+    "directions": [
+      "In mixing bowl, cream butter and sugar until light and fluffy. Stir in remaining ingredients.",
+      "Mix by hand to blend.",
+      "Roll dough into 1-inch balls.",
+      "Place balls on lightly greased cookie sheet, pressing each ball with heel of your hand until balls are about 1/2-inch thick.",
+      "Bake in preheated 300° oven for 20 minutes or until bottoms are golden brown.",
+      "Makes 18 cookies."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 16,
+    "name": "Buffalo Chicken Dip",
+    "ingredients": [
+      "10 oz (280 grm). cans chunk chicken, drained and shredded",
+      "8 oz (224 grm). packages cold cream cheese, cubed",
+      "cup (225 ml) prepared ranch salad dressing",
+      "/4 cup (175 ml) pepper sauce, such as Franks Red Hot",
+      "-1/2 cups (350 ml) shredded cheddar cheese",
+      "bunch celery, cleaned and cut into 4 inch pieces",
+      "8 oz (224 grm). box chicken-flavored crackers"
+    ],
+    "description": "Heat chicken and hot sauce in a skillet over medium heat, until heated through....",
+    "cookingTime": 45,
+    "difficulty": "medium",
+    "cuisine": "American",
+    "directions": [
+      "Heat chicken and hot sauce in a skillet over medium heat, until heated through.",
+      "Stir in cream cheese and ranch dressing.",
+      "Cook, stirring until well blended and warm.",
+      "Mix in half of the cubed cheese and transfer the mixture to a slow cooker.",
+      "Sprinkle the remaining cheeses over the top.",
+      "Cover and cook on Low setting until hot and bubbly.",
+      "Serve with celery sticks and crackers."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 17,
+    "name": "Cracker Mix",
+    "ingredients": [
+      "oz. soup and chili crackers (2 1/2 bags)",
+      "c. oil",
+      "1/2 Tbsp. dill weed",
+      "/4 tsp. garlic powder",
+      "/4 tsp. onion powder",
+      "/3 tsp. cayenne pepper",
+      "pkg. Ranch original dressing mix"
+    ],
+    "description": "Stir ingredients well and pour over crackers....",
+    "cookingTime": 15,
+    "difficulty": "medium",
+    "cuisine": "American",
+    "directions": [
+      "Stir ingredients well and pour over crackers.",
+      "Stir occasionally."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 18,
+    "name": "Asian Party Mix",
+    "ingredients": [
+      "cups crispy corn cereal squares (such as Corn Chex)",
+      "cups crispy rice cereal squares (such as Rice Chex)",
+      "cups sesame rice crackers, broken",
+      "cup tiny fat-free pretzel twists",
+      "/4 cup wasabi peas",
+      "/4 cup lightly salted dry-roasted peanuts",
+      "tablespoons unsalted butter",
+      "tablespoon sugar",
+      "tablespoon curry powder",
+      "tablespoon low-sodium soy sauce",
+      "teaspoon Worcestershire sauce",
+      "/2 teaspoon garlic powder",
+      "/2 teaspoon ground cumin",
+      "/4 teaspoon salt",
+      "/4 teaspoon ground red pepper",
+      "Cooking spray"
+    ],
+    "description": "Preheat oven to 200°....",
+    "cookingTime": 15,
+    "difficulty": "hard",
+    "cuisine": "Indian",
+    "directions": [
+      "Preheat oven to 200°.",
+      "Combine the first 6 ingredients in a large bowl; set aside. Melt the butter in a small saucepan over medium heat. Add sugar and remaining ingredients, stirring with a whisk. Pour butter mixture over cereal mixture, tossing gently to coat. Spread the mixture onto a jelly roll pan coated with cooking spray. Bake at 200° for 45 minutes. Cool completely before serving.",
+      "Dried green peas coated with wasabi are available by the pound in some supermarkets, often in the bulk foods department. Don't worry if you can't find them; the mix is fine without them. Rice crackers are crunchy and airy, with the mild taste of rice. Look for them in the snack or Asian section of your grocery store."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 19,
+    "name": "Tarte Tatin Aux Poires",
+    "ingredients": [
+      "pears, peeled and sliced",
+      "tablespoon ground cardamom",
+      "cardamom pods",
+      "g butter",
+      "eggs",
+      "g sugar",
+      "g self rising flour",
+      "g gingerbread cookies"
+    ],
+    "description": "Preheat the oven at 180 C....",
+    "cookingTime": 60,
+    "difficulty": "medium",
+    "cuisine": "Asian",
+    "directions": [
+      "Preheat the oven at 180 C.",
+      "Make a caramelsauce, mixing 120 g of sugar, the cardamom pods and 3 tablespoons of water in a small pan.",
+      "Heat until golden.",
+      "Pour the caramelsauce in a tart tin.",
+      "Arrange the pear slices on top of the caramel.",
+      "Melt the butter and leave to cool for a few minutes.",
+      "Mix the eggs with 100 g of sugar and the ground cardamom.",
+      "Add the melted butter and the flour.",
+      "Crumble the speculoos and mix the crumbs with the dough.",
+      "Pour the dough over the pears."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 20,
+    "name": "Applesauce Cupcakes",
+    "ingredients": [
+      "/2 c. chopped raisins",
+      "/2 c. chopped nuts",
+      "c. sifted flour",
+      "tsp. soda",
+      "/2 tsp. salt",
+      "tsp. cinnamon",
+      "/2 tsp. cloves",
+      "Tbsp. oleo",
+      "c. sugar",
+      "egg",
+      "c. applesauce"
+    ],
+    "description": "Wash raisins in lukewarm water and cut into small pieces. Scald nuts and chop coarsely....",
+    "cookingTime": 45,
+    "difficulty": "hard",
+    "cuisine": "American",
+    "directions": [
+      "Wash raisins in lukewarm water and cut into small pieces. Scald nuts and chop coarsely.",
+      "Sift flour; measure and return to sifter.",
+      "Add soda, salt and spices.",
+      "Cream shortening; add sugar gradually.",
+      "Add egg and beat until light.",
+      "Add dry ingredients alternately with applesauce.",
+      "Stir in nuts and raisins.",
+      "Fill muffin tins 2/3 full.",
+      "Bake at 350° for 20 to 30 minutes."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 21,
+    "name": "Broccoli And Wasabi Dip",
+    "ingredients": [
+      "bunch broccoli",
+      "/2 onion",
+      "tablespoon butter",
+      "/4 cup smooth ricotta cheese",
+      "1/2 teaspoons salt",
+      "/4 teaspoon wasabi powder",
+      "tablespoon fresh lemon juice"
+    ],
+    "description": "Cut the broccoli into florets and cook in boiling salted water until tender. Refresh under cold running water and drain well....",
+    "cookingTime": 30,
+    "difficulty": "medium",
+    "cuisine": "American",
+    "directions": [
+      "Cut the broccoli into florets and cook in boiling salted water until tender. Refresh under cold running water and drain well.",
+      "Peel and finely dice the onion.",
+      "Melt the butter in a small frying pan, add the diced onion and cook over a low heat until soft but not coloured.",
+      "Place the drained broccoli, cooked onion and cheese in a food processor. Blend until smooth.",
+      "Add the salt, wasabi powder and lemon juice. Blend until well mixed, then check the seasoning.",
+      "Cover and refrigerate until ready to serve."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 22,
+    "name": "Lye Soap",
+    "ingredients": [
+      "lb. fat, melted",
+      "can lye",
+      "1/2 pt. hot water"
+    ],
+    "description": "Dissolve the lye in the hot water; let cool, then pour lye solution in a slow, easy stream into melted fat, stirring constantly....",
+    "cookingTime": 30,
+    "difficulty": "easy",
+    "cuisine": "American",
+    "directions": [
+      "Dissolve the lye in the hot water; let cool, then pour lye solution in a slow, easy stream into melted fat, stirring constantly.",
+      "Continue stirring until cool.",
+      "Pour into boxes that have been dipped in cold water.",
+      "Cut into desired size of squares when cold and set.",
+      "You can add perfumed bath oil, if so desired."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 23,
+    "name": "Grilled Cabbage Ii",
+    "ingredients": [
+      "head cabbage, cored and cut into wedges",
+      "onion, sliced",
+      "green bell pepper, sliced",
+      "clove garlic, minced",
+      "cracked black pepper to taste",
+      "/4 cup butter or margarine, cut into pieces"
+    ],
+    "description": "Preheat grill for medium heat, and lightly oil grate....",
+    "cookingTime": 15,
+    "difficulty": "medium",
+    "cuisine": "American",
+    "directions": [
+      "Preheat grill for medium heat, and lightly oil grate.",
+      "Place cabbage on a large sheet of aluminum foil. Top with onion slices, bell pepper slices, garlic, black pepper, and butter. Fold edges of foil together to seal, then wrap entire package again with another sheet of foil.",
+      "Cook on hot grill for 30 to 45 minutes, turning packet every 10 minutes."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 24,
+    "name": "Spaghetti With Meat",
+    "ingredients": [
+      "12 lbs stew meat",
+      "tablespoon oil",
+      "(48 ounce) can tomato juice",
+      "(10 1/2 ounce) can tomato soup",
+      "(10 1/2 ounce) can water (use empty soup can)",
+      "(6 ounce) can tomato paste",
+      "garlic cloves",
+      "bay leaves",
+      "teaspoon clove",
+      "teaspoon allspice",
+      "teaspoon ginger",
+      "teaspoon cinnamon",
+      "onion, cut up"
+    ],
+    "description": "In a large pot brown meat (If you only brown one side of meat it will retain it's size and absorb more flavour from the sauce)....",
+    "cookingTime": 30,
+    "difficulty": "hard",
+    "cuisine": "Asian",
+    "directions": [
+      "In a large pot brown meat (If you only brown one side of meat it will retain it's size and absorb more flavour from the sauce).",
+      "Add all other ingredients.",
+      "Heat to a near boil.",
+      "Reduce heat and allow to simmer for 6-8 hours until sauce thickens.",
+      "Serve with spaghetti noodles and cheese of your choice."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 25,
+    "name": "Delta Black Bottom Pie",
+    "ingredients": [
+      "gingersnaps, crushed",
+      "/2 cup butter or margarine, melted",
+      "/4 cup sugar",
+      "tablespoon plus 3/4 teaspoon cornstarch",
+      "/8 teaspoon salt",
+      "eggs, separated",
+      "cups milk, scalded",
+      "1/2 (1-ounce) squares unsweetened chocolate",
+      "teaspoon vanilla extract",
+      "tablespoon unflavored gelatin",
+      "/4 cup cold water",
+      "tablespoons dark rum",
+      "/4 teaspoon cream of tartar",
+      "Grated chocolate (optional)",
+      "cup whipping cream, whipped"
+    ],
+    "description": "Combine cookie crumbs and butter, mixing well. Press firmly into bottom and sides of a lightly greased 10-inch pie plate. Bake at 300° for 10 minutes. Let cool completely....",
+    "cookingTime": 30,
+    "difficulty": "hard",
+    "cuisine": "Asian",
+    "directions": [
+      "Combine cookie crumbs and butter, mixing well. Press firmly into bottom and sides of a lightly greased 10-inch pie plate. Bake at 300° for 10 minutes. Let cool completely.",
+      "Combine sugar, cornstarch, and salt in top of a double boiler. Beat egg yolks; add to sugar mixture, stirring well. Gradually add scalded milk. Bring water in bottom of double boiler to a boil. Reduce heat to low; cook, stirring constantly, until mixture is slightly thickened and coats a metal spoon. Remove from heat.",
+      "Remove 1 1/4 cups hot mixture; place in a small mixing bowl. Add chocolate squares; stir until chocolate melts. Cool slightly. Add vanilla; stir well. Pour filling into prepared piecrust. Chill until slightly set.",
+      "Dissolve gelatin in cold water; add to remaining hot mixture, stirring constantly. Let mixture cool. Stir in rum.",
+      "Beat egg whites (at room temperature) until foamy; add cream of tartar. Beat until stiff peaks form. Fold into cooled gelatin mixture. Spoon over chocolate mixture; chill until set. Sprinkle with grated chocolate, if desired. Pipe whipped cream around edge of pie with a pastry bag."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 26,
+    "name": "Tomato Salsa",
+    "ingredients": [
+      "roma tomatoes (3 cups), seeded and chopped",
+      "small green bell pepper (1/2 cup), chopped",
+      "cloves garlic finely chopped",
+      "/2 sliced green onions (5 medium)",
+      "Tbsp chopped fresh cilantro",
+      "Tbsp finely chopped jalapeno chilies",
+      "- 3 tbsp lime juice",
+      "teas salt"
+    ],
+    "description": "Mix all ingredients in glass or plastic bowl. Cover and refrigerate until serving. Serve with tortilla chips....",
+    "cookingTime": 15,
+    "difficulty": "medium",
+    "cuisine": "Mexican",
+    "directions": [
+      "Mix all ingredients in glass or plastic bowl. Cover and refrigerate until serving. Serve with tortilla chips."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 27,
+    "name": "Seafood Stew",
+    "ingredients": [
+      "tablespoons extra virgin olive oil",
+      "14 cups onions, chopped",
+      "-2 tablespoon garlic, chopped",
+      "tablespoon dried oregano",
+      "12 teaspoons fennel seeds (optional)",
+      "cup chicken stock",
+      "cup dry white wine",
+      "lb shrimp, peeled and deveined (21-25 count)",
+      "ounces firm white fish, cut into 1 in pieces",
+      "cup fresh basil, chopped",
+      "12 cups crushed tomatoes",
+      "cup bottled clam juice",
+      "cayenne pepper, salt, black pepper, to taste"
+    ],
+    "description": "Heat olive oil in soup pot over med heat....",
+    "cookingTime": 45,
+    "difficulty": "hard",
+    "cuisine": "Italian",
+    "directions": [
+      "Heat olive oil in soup pot over med heat.",
+      "Add onion, garlic, oregano, and fennel seeds and saute until onion is tender (about 8 min).",
+      "Add tomatoes, clam juice, stock, and wine.",
+      "Increase heat and boil until slightly thickened, about 15 minute.",
+      "Add seafood, reduce heat and simmer 2 minute.",
+      "Mix in fresh basil and simmer until shrimp are just opaque in center, about 2 min longer.",
+      "Season to taste with cayenne, salt, and pepper."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 28,
+    "name": "Kale Cups",
+    "ingredients": [
+      "to 10 cups kale, ribs removed and roughly chopped (1 bunch)",
+      "/2 cup cooked white rice",
+      "/2 cup reduced fat ricotta cheese",
+      "/2 cup grated Parmesan cheese",
+      "large eggs, lightly beaten",
+      "shallot, finely chopped",
+      "garlic cloves, minced",
+      "tablespoon miso, preferably white (optional)",
+      "teaspoon dried thyme",
+      "teaspoon lemon zest",
+      "/4 teaspoon nutmeg",
+      "/4 teaspoon dried red chili flakes (optional)",
+      "tablespoons sesame seeds"
+    ],
+    "description": "Preheat oven to 200 C / 400 F. Grease a 12 medium- sized muffin tray...",
+    "cookingTime": 30,
+    "difficulty": "hard",
+    "cuisine": "Italian",
+    "directions": [
+      "Preheat oven to 200 C / 400 F. Grease a 12 medium- sized muffin tray",
+      "Finely chop kale in a food processor in two times. In a large bowl combine rice, ricotta, grated Parmesan cheese, eggs, shallot, garlic, miso, thyme, lemon zest, nutmeg and chili flakes.",
+      "Add kale to the bowl and mix well until all the ricotta has blended in with the kale. Pour the mixture in the prepared 12 medium-sized muffin tray and bake for 20 minutes. Allow to cool 10 minutes before unmolding.",
+      "Heat a skillet over medium heat and toast sesame seeds until golden, about 3 minutes. Serve kale cups with a sprinkle of toasted sesame seeds on top."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 29,
+    "name": "Palacsinta",
+    "ingredients": [
+      "-1/2 cup Sifted All-Purpose Flour",
+      "/4 teaspoons Salt",
+      "Eggs",
+      "/4 cups Milk",
+      "Tablespoons Melted Butter",
+      "/4 cups Soda Water",
+      "-1/2 Tablespoon Cooking Oil",
+      "Your Desired Fruit Filling, To Serve",
+      "Powdered Sugar, For Dusting"
+    ],
+    "description": "Start by mixing sifted four and salt together in a big bowl. Work in eggs one at a time. Very gradually add milk, beating well as you go along. Beat in melted butter and strain the batter to remove any large lumps. Cover and refrigerate for at least ...",
+    "cookingTime": 30,
+    "difficulty": "medium",
+    "cuisine": "American",
+    "directions": [
+      "Start by mixing sifted four and salt together in a big bowl. Work in eggs one at a time. Very gradually add milk, beating well as you go along. Beat in melted butter and strain the batter to remove any large lumps. Cover and refrigerate for at least 2 hours or overnight. Just before using, stir batter and pour in as much soda water as needed to make a thin batter, the consistency of light cream.",
+      "Make each crepe separately! Heat a 6 1/2 inch pan (small frying pan with sloping sides) until very hot. Brush with cooking oil. When it starts to smoke, remove from heat and pour 2 to 3 tablespoons of batter into the pan. Spread batter with a ladle until crepe is the right size if possible. Quickly swirl the pan around so the batter flows to the sides, thinly coating the entire bottom. A palacsinta is supposed to be very thin, as thin as it can be without being lacy.",
+      "Put the pan back on the heat for about 1 minute, then give it a couple of good jerks to loosen the crepe. Flip it if you can or turn it over by hand using a spatula to lift it up out of the pan first. Cook briefly on the second side and slide it onto a warm dish or pie plate. Keep the crepes warm as you continue cooking the remaining batter.",
+      "Fill crepes with a few tablespoons of the filling you choose and roll. Sprinkle with powdered sugar."
+    ],
+    "source": "All-Recipes"
+  },
+  {
+    "id": 30,
+    "name": "Beef Stroganoff",
+    "ingredients": [
+      "1/2 lb. round steak",
+      "can (4 oz.) sliced mushrooms, drained",
+      "/2 c. chopped onion",
+      "/4 c. butter or margarine",
+      "can Campbell's beef broth",
+      "/2 c. sour cream"
+    ],
+    "description": "meat into thin strips....",
+    "cookingTime": 60,
+    "difficulty": "medium",
+    "cuisine": "American",
+    "directions": [
+      "meat into thin strips.",
+      "skillet,",
+      "meat, mushrooms and onion in butter; season with\tsalt",
+      "pepper. Add broth (rinse can out with water and add).",
+      "Cover; simmer 1 hour or until meat is tender.",
+      "Gradually blend",
+      "cup water into",
+      "tablespoons flour.\tSlowly add to",
+      "until thickened. Slowly",
+      "sour cream."
+    ],
+    "source": "All-Recipes"
+  }
 ]

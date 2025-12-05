@@ -66,38 +66,12 @@ class RecipeRecommender:
             FileNotFoundError: If recipe file doesn't exist
             ValueError: If recipe data is invalid or empty
         """
-        # Default path handling
+        # Default path handling - Always use recipes.json (now has 30 recipes)
         if recipe_file_path is None:
             current_dir = Path(__file__).parent.parent
-            
-            # Try to use RecipeNLG dataset if available
-            if use_recipenlg:
-                recipenlg_path = current_dir / 'data' / 'recipenlg_recipes.json'
-                if os.path.exists(recipenlg_path):
-                    recipe_file_path = recipenlg_path
-                    if not self.silent:
-                        print("Using RecipeNLG dataset", file=sys.stderr)
-                else:
-                    # Try to download RecipeNLG dataset
-                    if not self.silent:
-                        print("RecipeNLG dataset not found. Downloading...", file=sys.stderr)
-                    try:
-                        from recipenlg_loader import download_recipenlg, check_dataset_exists
-                        
-                        # Download 5000 recipes by default (takes ~2-3 minutes)
-                        download_recipenlg(
-                            output_path=str(recipenlg_path),
-                            sample_size=5000,
-                            silent=self.silent
-                        )
-                        recipe_file_path = recipenlg_path
-                    except Exception as e:
-                        if not self.silent:
-                            print(f"Failed to download RecipeNLG: {e}", file=sys.stderr)
-                            print("Falling back to default recipes.json", file=sys.stderr)
-                        recipe_file_path = current_dir / 'data' / 'recipes.json'
-            else:
-                recipe_file_path = current_dir / 'data' / 'recipes.json'
+            recipe_file_path = current_dir / 'data' / 'recipes.json'
+            if not self.silent:
+                print("Using recipes.json dataset", file=sys.stderr)
         
         # Validate file exists
         if not os.path.exists(recipe_file_path):
