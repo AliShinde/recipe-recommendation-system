@@ -1,0 +1,177 @@
+[
+	{
+		"id": 1,
+		"name": "Classic Spaghetti Carbonara",
+		"ingredients": [
+			"spaghetti",
+			"eggs",
+			"parmesan cheese",
+			"bacon",
+			"black pepper",
+			"salt"
+		],
+		"description": "A traditional Italian pasta dish with a creamy egg-based sauce",
+		"cookingTime": 20,
+		"difficulty": "medium",
+		"cuisine": "Italian"
+	},
+	{
+		"id": 2,
+		"name": "Chicken Stir Fry",
+		"ingredients": [
+			"chicken breast",
+			"soy sauce",
+			"bell peppers",
+			"onion",
+			"garlic",
+			"ginger",
+			"rice",
+			"vegetable oil"
+		],
+		"description": "Quick and healthy Asian-inspired stir fry",
+		"cookingTime": 15,
+		"difficulty": "easy",
+		"cuisine": "Asian"
+	},
+	{
+		"id": 3,
+		"name": "Greek Salad",
+		"ingredients": [
+			"tomatoes",
+			"cucumber",
+			"red onion",
+			"feta cheese",
+			"olives",
+			"olive oil",
+			"lemon juice",
+			"oregano"
+		],
+		"description": "Fresh Mediterranean salad with tangy feta",
+		"cookingTime": 10,
+		"difficulty": "easy",
+		"cuisine": "Greek"
+	},
+	{
+		"id": 4,
+		"name": "Beef Tacos",
+		"ingredients": [
+			"ground beef",
+			"taco shells",
+			"lettuce",
+			"tomatoes",
+			"cheese",
+			"sour cream",
+			"onion",
+			"cilantro"
+		],
+		"description": "Classic Mexican tacos with seasoned beef",
+		"cookingTime": 25,
+		"difficulty": "easy",
+		"cuisine": "Mexican"
+	},
+	{
+		"id": 5,
+		"name": "Vegetable Curry",
+		"ingredients": [
+			"potatoes",
+			"carrots",
+			"peas",
+			"coconut milk",
+			"curry powder",
+			"onion",
+			"garlic",
+			"ginger",
+			"rice"
+		],
+		"description": "Creamy and aromatic vegetarian curry",
+		"cookingTime": 35,
+		"difficulty": "medium",
+		"cuisine": "Indian"
+	},
+	{
+		"id": 6,
+		"name": "Caesar Salad",
+		"ingredients": [
+			"romaine lettuce",
+			"parmesan cheese",
+			"croutons",
+			"chicken breast",
+			"caesar dressing",
+			"lemon juice",
+			"garlic"
+		],
+		"description": "Classic Caesar salad with grilled chicken",
+		"cookingTime": 15,
+		"difficulty": "easy",
+		"cuisine": "American"
+	},
+	{
+		"id": 7,
+		"name": "Margherita Pizza",
+		"ingredients": [
+			"pizza dough",
+			"tomato sauce",
+			"mozzarella cheese",
+			"basil",
+			"olive oil",
+			"garlic"
+		],
+		"description": "Simple and delicious Italian pizza",
+		"cookingTime": 30,
+		"difficulty": "medium",
+		"cuisine": "Italian"
+	},
+	{
+		"id": 8,
+		"name": "Chicken Soup",
+		"ingredients": [
+			"chicken breast",
+			"carrots",
+			"celery",
+			"onion",
+			"garlic",
+			"chicken broth",
+			"noodles",
+			"parsley"
+		],
+		"description": "Comforting homemade chicken noodle soup",
+		"cookingTime": 45,
+		"difficulty": "easy",
+		"cuisine": "American"
+	},
+	{
+		"id": 9,
+		"name": "Fried Rice",
+		"ingredients": [
+			"rice",
+			"eggs",
+			"peas",
+			"carrots",
+			"soy sauce",
+			"green onions",
+			"garlic",
+			"vegetable oil"
+		],
+		"description": "Quick fried rice with vegetables",
+		"cookingTime": 20,
+		"difficulty": "easy",
+		"cuisine": "Asian"
+	},
+	{
+		"id": 10,
+		"name": "Caprese Salad",
+		"ingredients": [
+			"tomatoes",
+			"mozzarella cheese",
+			"basil",
+			"olive oil",
+			"balsamic vinegar",
+			"salt",
+			"black pepper"
+		],
+		"description": "Fresh Italian salad with tomatoes and mozzarella",
+		"cookingTime": 10,
+		"difficulty": "easy",
+		"cuisine": "Italian"
+	}
+]

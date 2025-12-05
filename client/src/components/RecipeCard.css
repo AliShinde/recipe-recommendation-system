@@ -1,0 +1,151 @@
+/* Recipe Card Component Styles */
+.recipe-card {
+	background: white;
+	border: 2px solid #e0e0e0;
+	border-radius: 12px;
+	padding: 1.5rem;
+	transition: all 0.3s;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.recipe-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+	border-color: #667eea;
+}
+
+.recipe-card:active {
+	transform: translateY(-2px);
+}
+
+.rank-badge {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.recipe-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 1rem;
+	padding-right: 3rem;
+}
+
+.recipe-name {
+	color: #333;
+	font-size: 1.4rem;
+	margin: 0;
+}
+
+.recipe-cuisine {
+	display: inline-block;
+	background: #f0f0f0;
+	padding: 0.25rem 0.75rem;
+	border-radius: 12px;
+	font-size: 0.85rem;
+	color: #666;
+	margin-top: 0.25rem;
+}
+
+.match-scores {
+	display: flex;
+	gap: 1.5rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background: #f9f9f9;
+	border-radius: 8px;
+}
+
+.score-item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.score-label {
+	font-size: 0.85rem;
+	color: #666;
+}
+
+.score-value {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.recipe-description {
+	color: #555;
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+
+.recipe-details {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	padding: 0.75rem 0;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-item {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.detail-icon {
+	font-size: 1.2rem;
+}
+
+.detail-text {
+	color: #666;
+	font-size: 0.95rem;
+}
+
+.difficulty-badge {
+	padding: 0.25rem 0.75rem;
+	border-radius: 12px;
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: white;
+	text-transform: capitalize;
+}
+
+.recipe-ingredients {
+	margin-top: 1rem;
+}
+
+.recipe-ingredients h4 {
+	color: #333;
+	font-size: 1rem;
+	margin-bottom: 0.75rem;
+}
+
+.ingredients-list {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 0.5rem;
+}
+
+.ingredient-item {
+	background: #f9f9f9;
+	padding: 0.5rem 0.75rem;
+	border-radius: 6px;
+	font-size: 0.9rem;
+	color: #555;
+	border-left: 3px solid #667eea;
+}

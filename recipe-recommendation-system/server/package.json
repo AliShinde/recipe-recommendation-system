@@ -1,0 +1,24 @@
+{
+  "name": "recipe-recommendation-system",
+  "version": "1.0.0",
+  "description": "A full stack web application for recommending recipes based on available ingredients.",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "dev": "ts-node-dev src/app.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.2",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

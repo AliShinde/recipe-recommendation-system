@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Spaghetti Carbonara",
+        "ingredients": [
+            {"name": "spaghetti", "quantity": "200g"},
+            {"name": "eggs", "quantity": "2"},
+            {"name": "parmesan cheese", "quantity": "50g"},
+            {"name": "pancetta", "quantity": "100g"},
+            {"name": "black pepper", "quantity": "to taste"}
+        ],
+        "instructions": "Cook spaghetti. In a bowl, mix eggs and cheese. Fry pancetta. Combine all with pepper."
+    },
+    {
+        "title": "Vegetable Stir Fry",
+        "ingredients": [
+            {"name": "mixed vegetables", "quantity": "300g"},
+            {"name": "soy sauce", "quantity": "2 tbsp"},
+            {"name": "garlic", "quantity": "2 cloves"},
+            {"name": "ginger", "quantity": "1 tsp"},
+            {"name": "olive oil", "quantity": "1 tbsp"}
+        ],
+        "instructions": "Heat oil, add garlic and ginger. Stir fry vegetables, add soy sauce."
+    },
+    {
+        "title": "Chicken Curry",
+        "ingredients": [
+            {"name": "chicken", "quantity": "500g"},
+            {"name": "curry powder", "quantity": "2 tbsp"},
+            {"name": "coconut milk", "quantity": "400ml"},
+            {"name": "onion", "quantity": "1"},
+            {"name": "salt", "quantity": "to taste"}
+        ],
+        "instructions": "Sauté onion, add chicken and curry powder. Pour in coconut milk and simmer."
+    },
+    {
+        "title": "Caprese Salad",
+        "ingredients": [
+            {"name": "mozzarella cheese", "quantity": "200g"},
+            {"name": "tomatoes", "quantity": "2"},
+            {"name": "basil", "quantity": "a handful"},
+            {"name": "olive oil", "quantity": "2 tbsp"},
+            {"name": "balsamic vinegar", "quantity": "1 tbsp"}
+        ],
+        "instructions": "Slice mozzarella and tomatoes. Layer with basil, drizzle with oil and vinegar."
+    },
+    {
+        "title": "Pancakes",
+        "ingredients": [
+            {"name": "flour", "quantity": "200g"},
+            {"name": "milk", "quantity": "300ml"},
+            {"name": "egg", "quantity": "1"},
+            {"name": "baking powder", "quantity": "1 tsp"},
+            {"name": "sugar", "quantity": "2 tbsp"}
+        ],
+        "instructions": "Mix all ingredients. Pour batter onto a hot pan and cook until golden."
+    }
+]

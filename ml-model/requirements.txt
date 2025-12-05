@@ -1,0 +1,10 @@
+# Core ML dependencies for recipe recommendation
+sentence-transformers>=3.0.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+
+# RecipeNLG dataset integration
+datasets>=2.14.0
+
+# Note: torch, transformers, and other dependencies are automatically
+# installed as dependencies of sentence-transformers

@@ -1,0 +1,70 @@
+/* App Component Styles */
+.app {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.app-header {
+	background: rgba(255, 255, 255, 0.95);
+	padding: 2rem;
+	text-align: center;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+	color: #333;
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.app-subtitle {
+	color: #666;
+	font-size: 1.1rem;
+}
+
+.app-main {
+	flex: 1;
+	padding: 2rem;
+}
+
+.app-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 400px 1fr;
+	gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+	.app-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+.input-section,
+.results-section {
+	background: white;
+	border-radius: 12px;
+	padding: 2rem;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.app-footer {
+	background: rgba(255, 255, 255, 0.95);
+	padding: 1.5rem;
+	text-align: center;
+	color: #666;
+	margin-top: 2rem;
+}
+
+.tech-badge {
+	display: inline-block;
+	background: #667eea;
+	color: white;
+	padding: 0.25rem 0.75rem;
+	border-radius: 12px;
+	font-size: 0.85rem;
+	margin-left: 0.5rem;
+	font-family: monospace;
+}
