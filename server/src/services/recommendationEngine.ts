@@ -230,10 +230,11 @@ print(json.dumps(result))
 			pythonProcess.stdin.end();
 
 			// Set timeout to prevent hanging processes
+			// Increased to 120 seconds for first request (ML model + embeddings loading)
 			const timeout = setTimeout(() => {
 				pythonProcess.kill();
-				reject(new Error("Python process timeout after 30 seconds"));
-			}, 30000);
+				reject(new Error("Python process timeout after 120 seconds"));
+			}, 120000);
 
 			// Clear timeout on process completion
 			pythonProcess.on("close", () => clearTimeout(timeout));
