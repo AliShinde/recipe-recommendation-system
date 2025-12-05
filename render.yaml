@@ -10,7 +10,7 @@ services:
       plan: free
       branch: main
       rootDir: server
-      buildCommand: bash ../build.sh
+      buildCommand: bash build.sh
       startCommand: npm start
       healthCheckPath: /
       envVars:
