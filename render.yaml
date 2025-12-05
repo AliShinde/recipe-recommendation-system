@@ -2,7 +2,7 @@
 # This file defines both backend and frontend services for one-click deployment
 
 services:
-    # Backend API Service
+    # Backend API Service with Python support
     - type: web
       name: recipe-backend
       runtime: node
@@ -10,7 +10,7 @@ services:
       plan: free
       branch: main
       rootDir: server
-      buildCommand: npm install && npm run build
+      buildCommand: bash ../build.sh
       startCommand: npm start
       healthCheckPath: /
       envVars:
