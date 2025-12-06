@@ -16,10 +16,25 @@ import recommendationRoutes from "./routes/recommendations";
 const app: Application = express();
 
 // Middleware configuration
-// Enable CORS for all routes (allow same-origin in Docker, localhost in dev)
+// Enable CORS for both local and production environments
+const allowedOrigins = [
+	"http://localhost:3000", // Local development
+	"http://localhost:3001", // Alternative local port
+	process.env.CLIENT_URL, // Production frontend URL
+].filter(Boolean); // Remove undefined values
+
 app.use(
 	cors({
-		origin: true, // Allow all origins (safe since frontend is served from same container)
+		origin: (origin, callback) => {
+			// Allow requests with no origin (mobile apps, Postman, etc.)
+			if (!origin) return callback(null, true);
+			
+			if (allowedOrigins.includes(origin)) {
+				callback(null, true);
+			} else {
+				callback(new Error("Not allowed by CORS"));
+			}
+		},
 		credentials: true,
 	})
 );
