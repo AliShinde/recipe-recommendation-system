@@ -17,7 +17,14 @@ os.environ['TOKENIZERS_PARALLELISM'] = 'false'
 # Suppress all warnings
 warnings.filterwarnings('ignore')
 
-from sentence_transformers import SentenceTransformer
+# Try to import ML dependencies, fallback to lightweight version if not available
+try:
+    from sentence_transformers import SentenceTransformer
+    SENTENCE_TRANSFORMERS_AVAILABLE = True
+except ImportError:
+    SENTENCE_TRANSFORMERS_AVAILABLE = False
+    print("Warning: sentence_transformers not available, using lightweight mode", file=sys.stderr)
+
 import numpy as np
 import json
 from typing import List, Dict, Optional, Union
