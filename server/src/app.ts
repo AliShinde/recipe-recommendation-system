@@ -31,8 +31,9 @@ app.use(
 			if (!origin) return callback(null, true);
 
 			// Check if origin is in allowed list or matches pattern
-			const isAllowed = allowedOrigins.some(allowed => 
-				origin === allowed || origin?.includes('onrender.com')
+			const isAllowed = allowedOrigins.some(
+				(allowed) =>
+					origin === allowed || origin?.includes("onrender.com")
 			);
 
 			if (isAllowed) {
@@ -43,8 +44,8 @@ app.use(
 			}
 		},
 		credentials: true,
-		methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-		allowedHeaders: ['Content-Type', 'Authorization'],
+		methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+		allowedHeaders: ["Content-Type", "Authorization"],
 	})
 );
 
@@ -80,8 +81,19 @@ app.get("/api/health", (req: Request, res: Response) => {
 app.use(express.static(path.join(__dirname, "../public")));
 
 // Catch-all route for React Router (SPA)
-// This must be AFTER API routes to avoid conflicts
+// This must be AFTER API routes and should only handle non-API routes
 app.get("*", (req: Request, res: Response) => {
+	// Don't catch API routes - they should have already been handled
+	if (req.path.startsWith("/api")) {
+		res.status(404).json({
+			success: false,
+			error: "API endpoint not found",
+			path: req.path,
+		});
+		return;
+	}
+	
+	// Serve React app for all other routes
 	res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
