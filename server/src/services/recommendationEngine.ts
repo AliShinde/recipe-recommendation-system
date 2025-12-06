@@ -24,9 +24,9 @@ export class RecommendationEngine {
 			"predict.py"
 		);
 
-		// Use 'python' or 'python3' depending on system
+		// Use 'python3' for Docker/Linux environments
 		// In production, this should be configurable via environment variable
-		this.pythonExecutable = process.env.PYTHON_PATH || "python";
+		this.pythonExecutable = process.env.PYTHON_PATH || "python3";
 	}
 
 	/**
