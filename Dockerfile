@@ -24,11 +24,12 @@ COPY server/package*.json ./server/
 RUN cd server && npm ci --production=false
 COPY server/ ./server/
 
-# Copy ML model files BEFORE installing Python deps
+# Copy ML model files
 COPY ml-model/ ./ml-model/
 
-# Install Python ML dependencies directly with pip3
-RUN pip3 install --break-system-packages --no-cache-dir -r ml-model/requirements.txt
+# Install ONLY essential Python packages (skip heavy ML dependencies for free tier)
+# Using lightweight keyword matching instead of sentence-transformers
+RUN pip3 install --break-system-packages --no-cache-dir numpy scikit-learn
 
 # Build TypeScript backend
 RUN cd server && npm run build

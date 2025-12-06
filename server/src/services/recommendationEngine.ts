@@ -13,6 +13,12 @@ export class RecommendationEngine {
 	private pythonExecutable: string;
 
 	constructor() {
+		// Use lightweight version for production (Render free tier)
+		// Use full ML model for local development
+		const scriptName = process.env.NODE_ENV === 'production' 
+			? 'predict_lightweight.py' 
+			: 'predict.py';
+		
 		// Path to the Python prediction script
 		this.pythonScriptPath = path.join(
 			__dirname,
@@ -21,7 +27,7 @@ export class RecommendationEngine {
 			"..",
 			"ml-model",
 			"src",
-			"predict.py"
+			scriptName
 		);
 
 		// Use 'python3' for Docker/Linux environments
