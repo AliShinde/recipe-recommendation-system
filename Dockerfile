@@ -20,14 +20,14 @@ COPY server/package*.json ./server/
 RUN cd server && npm ci --production=false
 COPY server/ ./server/
 
-# Build TypeScript backend
-RUN cd server && npm run build
-
-# Copy ML model files
+# Copy ML model files BEFORE installing Python deps
 COPY ml-model/ ./ml-model/
 
 # Install Python ML dependencies
 RUN pip3 install --no-cache-dir -r ml-model/requirements.txt
+
+# Build TypeScript backend
+RUN cd server && npm run build
 
 # Move frontend build to backend's public folder
 RUN mkdir -p server/public && mv client/build/* server/public/
