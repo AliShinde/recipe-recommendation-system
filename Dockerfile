@@ -7,7 +7,9 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Install Python and pip for ML model
-RUN apk add --no-cache python3 py3-pip
+RUN apk add --no-cache python3 py3-pip && \
+    python3 -m ensurepip && \
+    pip3 install --upgrade pip
 
 # Install frontend dependencies and build
 COPY client/package*.json ./client/
@@ -23,8 +25,8 @@ COPY server/ ./server/
 # Copy ML model files BEFORE installing Python deps
 COPY ml-model/ ./ml-model/
 
-# Install Python ML dependencies
-RUN pip3 install --no-cache-dir -r ml-model/requirements.txt
+# Install Python ML dependencies using python3 -m pip
+RUN python3 -m pip install --no-cache-dir -r ml-model/requirements.txt
 
 # Build TypeScript backend
 RUN cd server && npm run build
