@@ -27,8 +27,8 @@ COPY server/ ./server/
 # Copy ML model files BEFORE installing Python deps
 COPY ml-model/ ./ml-model/
 
-# Install Python ML dependencies using python3 -m pip
-RUN python3 -m pip install --no-cache-dir -r ml-model/requirements.txt
+# Install Python ML dependencies directly with pip3
+RUN pip3 install --break-system-packages --no-cache-dir -r ml-model/requirements.txt
 
 # Build TypeScript backend
 RUN cd server && npm run build
