@@ -1,16 +1,17 @@
 # Recipe Recommendation System - Docker Image
 # Single container serving both frontend and backend
 
-FROM node:18-alpine
+# Use Debian-based Node image for better Python compatibility
+FROM node:18-slim
 
 # Set working directory
 WORKDIR /app
 
 # Install Python and pip for ML model
-RUN apk add --no-cache python3 py3-pip
-RUN ln -sf python3 /usr/bin/python
-RUN python3 -m ensurepip
-RUN python3 -m pip install --no-cache-dir --upgrade pip setuptools wheel
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Install frontend dependencies and build
 COPY client/package*.json ./client/
