@@ -20,7 +20,8 @@ const app: Application = express();
 const allowedOrigins = [
 	"http://localhost:3000", // Local development
 	"http://localhost:3001", // Alternative local port
-	process.env.CLIENT_URL, // Production frontend URL
+	"https://recipe-recommendation-system-xszh.onrender.com", // Production frontend
+	process.env.CLIENT_URL, // Additional production URL from env
 ].filter(Boolean); // Remove undefined values
 
 app.use(
@@ -28,14 +29,22 @@ app.use(
 		origin: (origin, callback) => {
 			// Allow requests with no origin (mobile apps, Postman, etc.)
 			if (!origin) return callback(null, true);
-			
-			if (allowedOrigins.includes(origin)) {
+
+			// Check if origin is in allowed list or matches pattern
+			const isAllowed = allowedOrigins.some(allowed => 
+				origin === allowed || origin?.includes('onrender.com')
+			);
+
+			if (isAllowed) {
 				callback(null, true);
 			} else {
+				console.warn(`CORS blocked origin: ${origin}`);
 				callback(new Error("Not allowed by CORS"));
 			}
 		},
 		credentials: true,
+		methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+		allowedHeaders: ['Content-Type', 'Authorization'],
 	})
 );
 
