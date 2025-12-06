@@ -5,8 +5,12 @@
  */
 
 import { Request, Response } from "express";
-import { recommendationEngine } from "../services/recommendationEngine";
+// Use lightweight engine for Render free tier (no ML dependencies)
+import { LightweightRecommendationEngine } from "../services/lightweightRecommendationEngine";
 import { RecommendationRequest } from "../types";
+
+// Initialize the lightweight recommendation engine
+const recommendationEngine = new LightweightRecommendationEngine();
 
 /**
  * POST /api/recommendations
