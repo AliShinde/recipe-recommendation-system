@@ -8,7 +8,7 @@ import { RecommendationResponse } from "../types";
 // API configuration
 const API_BASE_URL =
 	process.env.REACT_APP_API_URL || "http://localhost:5000/api";
-const REQUEST_TIMEOUT = 30000; // 30 seconds
+const REQUEST_TIMEOUT = 120000; // 120 seconds (2 minutes) for ML model cold start
 
 /**
  * Custom error class for API errors
