@@ -9,6 +9,7 @@ dotenv.config();
 
 import express, { Application, Request, Response, NextFunction } from "express";
 import cors from "cors";
+import path from "path";
 import recommendationRoutes from "./routes/recommendations";
 
 // Initialize Express app
@@ -38,25 +39,26 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 // API Routes
 app.use("/api/recommendations", recommendationRoutes);
 
-// Root endpoint
-app.get("/", (req: Request, res: Response) => {
+// Health check endpoint
+app.get("/api/health", (req: Request, res: Response) => {
 	res.json({
 		message: "Recipe Recommendation API",
 		version: "1.0.0",
+		status: "healthy",
 		endpoints: {
 			recommendations: "/api/recommendations",
-			health: "/api/recommendations/health",
+			health: "/api/health",
 		},
 	});
 });
 
-// 404 handler for undefined routes
-app.use((req: Request, res: Response) => {
-	res.status(404).json({
-		success: false,
-		error: "Route not found",
-		path: req.path,
-	});
+// Serve static frontend files (React build)
+app.use(express.static(path.join(__dirname, "../public")));
+
+// Catch-all route for React Router (SPA)
+// This must be AFTER API routes to avoid conflicts
+app.get("*", (req: Request, res: Response) => {
+	res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 // Global error handler

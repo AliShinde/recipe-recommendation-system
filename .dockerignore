@@ -1,0 +1,21 @@
+# Add .dockerignore to exclude unnecessary files
+node_modules
+npm-debug.log
+.git
+.gitignore
+README.md
+.env
+.env.local
+.env.development
+.env.production.local
+.DS_Store
+*.log
+.vscode
+.idea
+coverage
+.cache
+dist
+build
+*.md
+!PROJECT_REPORT.md
+render.yaml.backup

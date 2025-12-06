@@ -1,41 +1,18 @@
-# Render Blueprint for Recipe Recommendation System
-# This file defines both backend and frontend services for one-click deployment
+﻿# Render Blueprint for Recipe Recommendation System
+# Single Docker container deployment
 
 services:
-    # Backend API Service with Python support
+    # Single service serving both frontend and backend
     - type: web
-      name: recipe-backend
-      runtime: node
+      name: recipe-recommendation-system
+      env: docker
       region: oregon
       plan: free
       branch: main
-      rootDir: server
-      buildCommand: bash build.sh
-      startCommand: npm start
-      healthCheckPath: /
+      dockerfilePath: ./Dockerfile
+      healthCheckPath: /api/health
       envVars:
           - key: NODE_ENV
             value: production
           - key: PORT
             value: 10000
-          - key: PYTHON_PATH
-            value: python3
-          - key: CLIENT_URL
-            sync: false # Set this in Render dashboard after frontend deploys
-
-    # Frontend Static Site
-    - type: web
-      name: recipe-frontend
-      runtime: static
-      region: oregon
-      branch: main
-      rootDir: client
-      buildCommand: npm install && REACT_APP_API_URL=$REACT_APP_API_URL npm run build
-      staticPublishPath: build
-      routes:
-          - type: rewrite
-            source: /*
-            destination: /index.html
-      envVars:
-          - key: REACT_APP_API_URL
-            sync: false # Set this in Render dashboard after backend deploys
