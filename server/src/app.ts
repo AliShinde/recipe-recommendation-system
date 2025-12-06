@@ -92,7 +92,7 @@ app.get("*", (req: Request, res: Response) => {
 		});
 		return;
 	}
-	
+
 	// Serve React app for all other routes
 	res.sendFile(path.join(__dirname, "../public/index.html"));
 });
